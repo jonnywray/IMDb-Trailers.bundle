@@ -20,6 +20,7 @@ def Start():
   Plugin.AddViewGroup("Details", viewMode="InfoList", mediaType="items")
   MediaContainer.title1 = L('IMDb HD Trailers')
   MediaContainer.art = R('art-default.jpg')
+  DirectoryItem.thumb = R('icon-default.png')
   HTTP.CacheTime = CACHE_TIME
 
 ####################################################################################################
