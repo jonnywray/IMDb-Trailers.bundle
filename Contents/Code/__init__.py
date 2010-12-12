@@ -53,7 +53,7 @@ def HDVideos(sender, sort):
    	    tagLine = titleData.xpath('//div[@class="t-o-d-text-block t-o-d-tagline"]/span')[0].text
     Log("Adding video item:"+title)
     
-    dir.Append(Function(VideoItem(PlayVideo, title=title, summary=summary, subtitle=tagLine, rating=rating, thumb=thumb, duration=duration), videoId = videoId))
+    dir.Append(Function(VideoItem(PlayVideo, title=title, summary=summary, subtitle=tagLine, rating=rating, thumb=thumb, duration=duration), ext='mp4', videoId = videoId))
   return dir
 
 
